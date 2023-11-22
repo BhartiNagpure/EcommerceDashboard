@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #fff;
+}
+
+
+/* -----------------------------------------------------------------------------------
+  calender row css
+------------------------------------------------------------------------------------ */
+
+.mainDiv {
+  background-color: #f1f2f3;
+  margin-top: 80px;
+  height: 100%;
+}
+
+.calendar {
+  background-color: #fff;
+}
+
+.calendar-btn {
+  background-color: #405189;
+  border-radius: 0px 3px 3px 0px;
+}
+
+.icon {
+  color: #fff;
+}
+
+.add-product {
+  background-color: #daf4f0;
+  color: #0ab39c;
+  border-radius: 4px;
+  margin: 0px 10px;
+}
+
+.add-product:hover {
+  background-color: #0ab39c;
+  color: #fff;
+}
+
+.pulsewave {
+  background-color: #e1ebfd;
+  border-radius: 4px;
+  color: #2385ba;
+}
+
+.pulsewave:hover {
+  background-color: #2385ba;
+  color: #fff;
+}
+
+/* -----------------------------------------------------------------------------------
+maindiv above card css
+------------------------------------------------------------------------------------ */
+.arrowIcon {
+  transform: rotate(45deg);
+}
+
+.arrowdIcon {
+  transform: rotate(-45deg);
+}
+
+.dollar,
+.user,
+.wallet,
+.bag {
+  border-radius: 4px;
+}
+
+.dollar {
+  background-color: #daf4f0;
+}
+
+.bag {
+  background-color: #e1ebfd;
+}
+
+.user {
+  background-color: rgb(250, 238, 193)
+}
+
+.wallet {
+  background-color: rgb(232, 228, 228);
+}
+
+.card {
+  border: none;
+  margin-bottom: 10px;
+}
+
+.card-animate {
+  transition: transform 0.3s;
+}
+
+.card-animate:hover {
+  transform: translateY(-8px);
+}
+
+.border-dashed {
+  border: 0.1px solid rgb(219, 217, 217);
+  border-style: dashed;
+}
+
+/* -----------------------------------------------------------------------------------
+Sidebar css
+------------------------------------------------------------------------------------ */
+@media (max-width:768px) {
+
+}
+
+.sidebar-container {
+  background-color: #405189;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  transition: 0.6s ease;
+  transition-property: left;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  overflow-x: hidden;
+  transition: all 0.3s;
+}
+
+.sidebar-container::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  width: 85%;
+}
+
+.dropdownBtn {
+  float: right;
+  font-size: x-small;
+}
+
+.active {
+  color: white;
+}
+
+.menuItem,
+.sidebaricon {
+  color: #abb9e8;
+}
+
+.menuTitle {
+  padding: 20px 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+.dropdown-item {
+  list-style: none;
+  font-size: 13px;
+  padding: 10px;
+  color: #abb9e8;
+  
+}
+@media (max-width:768px) {
+  .navbar-toggler{
+    display: block;
+    position: fixed;
+    z-index: 3;
+    margin-top: 16px;
+    padding: 10px;
+    font-size: 20px;
+  }
+.sidebar-container{
+  left: -250px;
+}
+.isSidebar{
+left: 0px;
+z-index: 2;
+top: 80px;
+}
+}
+/* -----------------------------------------------------------------------------------
+Topbar css
+------------------------------------------------------------------------------------ */
+
+.barIcon {
+  color: grey;
+  font-size: 20px;
+}
+
+.searchbar {
+  background-color: #f1f2f3;
+  padding: 10px;
+  margin: 0px 20px;
+  border-radius: 5px;
+}
+
+.headerIcon {
+  color: grey;
+}
+
+.searchbar input {
+  background-color: #f1f2f3;
+}
+
+input:focus {
+  outline: none;
+}
+
+.header-btn:hover {
+  border-radius: 50%;
+  background-color: #e1ebfd;
+}
+
+.bagCount {
+  position: absolute;
+  transform: translateX(10px);
+  margin-top: -15px;
+  background-color: #36acec;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.bellCount {
+  background-color: orangered;
+}
+
+.header-profile-user {
+  width: 30px;
+}
+
+@media (max-width:768px) {
+  .header {
+    width: 100%;
+    max-width: 100%;
+  }
+  .barIcon{
+    display: none;
+  }
+  .profileDiv{
+    flex-direction: column;
+  }
+}
+ @media (max-width:426px) {
+  .searchbar{
+    position: absolute;
+  }
+  .searchbar input{
+    width: 80%;
+  }
+ }
+/* -----------------------------------------------------------------------------------
+Selling data card css
+------------------------------------------------------------------------------------ */
+.sellingImg {
+  width: 10%;
+  background-color: #f1f4fa;
+  border-radius: 2px;
+}
+
+.outof-btn {
+  font-size: x-small;
+  background-color: rgb(248, 202, 173);
+  color: red;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.selling-sub-text {
+  font-size: 15px;
+}
+
+.sellingDiv:hover {
+  background-color: #f1f2f3;
+}
+
+hr {
+  width: 100%;
+  color: #a8abaa;
+}
+
+@media (max-width:1024px) {
+  .topdiv {
+    flex-direction: column;
+  }
+}

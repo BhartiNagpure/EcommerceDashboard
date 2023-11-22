@@ -1,0 +1,15 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import './App.css';
+import Dashboard from './Components/Dashboard';
+
+function App() {
+  return (
+    <div>
+    <Dashboard/>
+  
+    </div>
+  );
+}
+
+export default App;
